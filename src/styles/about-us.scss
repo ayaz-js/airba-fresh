@@ -20,6 +20,11 @@
     line-height: 80px;
     margin: 0;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 42px;
+      line-height: 46px;
+    }
   }
 
   &__title-italic {

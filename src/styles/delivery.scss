@@ -1,0 +1,63 @@
+.delivery {
+  padding: 200px 0 0;
+
+  @media screen and (max-width: 1024px) {
+    padding: 200px 20px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 150px 20px 0;
+  }
+
+  &__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__paragraph {
+    display: none;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 30px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__text-italic {
+    font-style: italic;
+    color: #77c043;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icon-arrow {
+    display: block;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

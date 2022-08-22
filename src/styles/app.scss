@@ -6,7 +6,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    padding: 170px 20px 0;
+    padding: 70px 20px 0;
   }
 
   &__wrapper {
@@ -28,10 +28,15 @@
   &__image {
     display: block;
     max-width: 950px;
+    width: 100%;
     object-fit: cover;
 
     @media screen and (max-width: 1024px) {
       max-width: 512px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 350px;
     }
   }
 

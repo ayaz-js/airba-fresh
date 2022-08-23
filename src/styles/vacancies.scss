@@ -52,7 +52,7 @@
     }
   }
 
-  &__button {
+  &__link {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -61,7 +61,12 @@
     border-radius: 16px;
     color: #fff;
     padding: 18px 24px;
-    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #64a037;
+    }
   }
 
   &__icon {

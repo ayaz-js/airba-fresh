@@ -40,6 +40,11 @@
     color: #77c043;
   }
 
+  &__icon {
+    display: block;
+    max-width: 45px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;

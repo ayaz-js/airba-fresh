@@ -1,11 +1,12 @@
 .lead {
-  padding: 90px 0 0;
+  padding: 100px 0;
 
   @media screen and (max-width: 1024px) {
-    padding: 50px 20px 0;
+    padding: 50px 20px;
   }
 
   &__wrapper {
+    position: relative;
     max-width: 1400px;
     margin: 0 auto;
   }
@@ -41,7 +42,6 @@
   }
 
   &__icon {
-    display: block;
     max-width: 45px;
   }
 
@@ -49,6 +49,14 @@
     display: flex;
     justify-content: space-between;
     margin: 30px 0 0;
+  }
+
+  &__text-container {
+    max-width: 65%;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   &__text {
@@ -68,13 +76,17 @@
   }
 
   &__image {
+    position: absolute;
+    top: 250px;
+    right: 0;
     display: block;
-    max-width: 420px;
-    margin-top: -134px;
+    max-width: 545px;
+    width: 100%;
+    z-index: -1;
 
     @media screen and (max-width: 1024px) {
-      max-width: 360px;
-      margin-top: -100px;
+      top: 260px;
+      max-width: 460px;
     }
 
     @media screen and (max-width: 768px) {
@@ -85,7 +97,7 @@
   &__app-list {
     position: relative;
     display: flex;
-    margin: 38px 0 0;
+    margin: 158px 0 0;
     padding: 0;
     list-style: none;
     gap: 8px;

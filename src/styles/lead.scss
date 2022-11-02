@@ -5,6 +5,10 @@
     padding: 50px 20px 0;
   }
 
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+  }
+
   &__wrapper {
     position: relative;
     max-width: 1400px;
@@ -13,6 +17,10 @@
 
     @media screen and (max-width: 1024px) {
       min-height: 700px;
+    }
+
+    @media screen and (max-width: 425px) {
+      min-height: 540px;
     }
   }
 
@@ -32,9 +40,20 @@
       line-height: 46px;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 425px) {
       font-size: 36px;
       line-height: 40px;
+      max-width: 360px;
+    }
+
+    @media screen and (max-width: 390px) {
+      max-width: 320px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 268px;
     }
   }
 
@@ -48,6 +67,10 @@
 
   &__icon {
     max-width: 45px;
+
+    @media screen and (max-width: 425px) {
+      max-width: 28px;
+    }
   }
 
   &__container {
@@ -62,6 +85,10 @@
     @media screen and (max-width: 768px) {
       max-width: 100%;
     }
+
+    @media screen and (max-width: 425px) {
+      max-width: 350px;
+    }
   }
 
   &__text {
@@ -69,14 +96,21 @@
     font-weight: 500;
     line-height: 28px;
     margin: 0;
+    max-width: 100%;
 
     &:nth-last-of-type(1) {
       margin: 22px 0 0;
+      max-width: 66%;
     }
 
     @media screen and (max-width: 768px) {
       font-size: 18px;
       line-height: 22px;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 
@@ -95,7 +129,12 @@
     }
 
     @media screen and (max-width: 768px) {
-      display: none;
+      right: -50%;
+      max-width: 678px;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 530px;
     }
   }
 
@@ -123,6 +162,7 @@
         left: 100px;
         width: 238px;
         height: 65px;
+        display: none;
       }
 
       @media screen and (max-width: 320px) {
@@ -133,6 +173,18 @@
     @media screen and (max-width: 768px) {
       margin: 86px 0 0;
     }
+
+    @media screen and (max-width: 425px) {
+      margin: 156px 0 0;
+    }
+
+    @media screen and (max-width: 390px) {
+      margin: 118px 0 0;
+    }
+
+    @media screen and (max-width: 320px) {
+      margin: 116px 0 0;
+    }
   }
 
   &__app-icon {
@@ -141,6 +193,10 @@
 
     @media screen and (max-width: 425px) {
       max-width: 120px;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 94px;
     }
   }
 }

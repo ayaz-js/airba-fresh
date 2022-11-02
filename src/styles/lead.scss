@@ -1,14 +1,19 @@
 .lead {
-  padding: 100px 0;
+  padding: 100px 0 0;
 
   @media screen and (max-width: 1024px) {
-    padding: 50px 20px;
+    padding: 50px 20px 0;
   }
 
   &__wrapper {
     position: relative;
     max-width: 1400px;
+    min-height: 900px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1024px) {
+      min-height: 700px;
+    }
   }
 
   &__title {
@@ -77,16 +82,16 @@
 
   &__image {
     position: absolute;
-    top: 250px;
+    bottom: 0;
     right: 0;
     display: block;
-    max-width: 545px;
+    max-width: 678px;
     width: 100%;
     z-index: -1;
 
     @media screen and (max-width: 1024px) {
-      top: 260px;
       max-width: 460px;
+      bottom: 0;
     }
 
     @media screen and (max-width: 768px) {

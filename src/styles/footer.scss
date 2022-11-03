@@ -10,7 +10,7 @@
     padding: 0 0 72px;
 
     @media screen and (max-width: 1024px) {
-      padding: 0 20px;
+      padding: 0 20px 52px;
     }
   }
 
@@ -104,11 +104,13 @@
 
   &__links {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: 72px 0 0;
 
     @media screen and (max-width: 425px) {
       flex-direction: column;
+      align-items: flex-start;
       margin: 32px 0 0;
       gap: 32px;
     }

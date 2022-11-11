@@ -5,6 +5,10 @@
     padding: 150px 20px 0;
   }
 
+  @media screen and (max-width: 768px) {
+    padding: 100px 0 0;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
